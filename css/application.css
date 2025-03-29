@@ -1,0 +1,148 @@
+/* application.css */
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font Imports */
+@font-face {
+    font-family: 'Press Start 2P', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
+
+@font-face {
+    font-family: 'Bangers', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+}
+
+/* Body Styling */
+body {
+    background-color: #181818;
+    color: #F0F0F0;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+    /* application.css */
+
+/* Ensure the body has a min-height and relative positioning */
+body {
+    min-height: 100vh;  /* Ensure the body covers the full viewport */
+    position: relative; /* For absolute positioning of the home button */
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+/* Home Button Styling */
+.home-button 
+    position: absolute;
+    bottom: 20px; /* 20px from the bottom of the viewport */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    text-align: center;
+    z-index: 10; /* Ensures the button appears above other content */
+}
+
+/* Optional: Style the button hover effect */
+.home-button a img {
+    transition: transform 0.3s ease;
+}
+
+.home-button a img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+}
+
+/* Header Styling */
+header {
+    background-color: #2A2A2A;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #FF5733;
+    font-family: 'Press Start 2P', cursive; /* Pixelated Retro Font */
+    font-size: 36px;
+    text-shadow: 4px 4px 10px rgba(255, 87, 51, 0.8);
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #333333;
+    border: 2px solid #FF5733;
+}
+
+/* Subheading (h2) Styling */
+h2 {
+    color: #F7C92B;
+    font-family: 'Bangers', cursive; /* Fun and bold font */
+    font-size: 28px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(247, 201, 43, 0.6);
+}
+
+/* Paragraph Styling */
+p {
+    color: #B0B0B0;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Orbitron', sans-serif; /* Clean and modern font */
+}
+
+/* Ordered List */
+ol {
+    list-style-type: decimal;
+    color: #FF57A1;
+    margin-left: 20px;
+}
+
+ol li {
+    margin: 10px 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Image Styling */
+.images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #FF5733;
+    box-shadow: 0 4px 8px rgba(255, 87, 51, 0.6);
+}
+
+/* iframe Styling */
+iframe {
+    border: 5px solid #F7C92B;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(247, 201, 43, 0.8);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2A2A2A;
+    color: #FF5733;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+}
+/* Add Neon Effect on hover */
+a:hover {
+    color: #FF5733;
+    text-shadow: 0 0 5px #FF5733, 0 0 10px #FF5733, 0 0 15px #FF5733;
+}

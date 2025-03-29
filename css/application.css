@@ -1,132 +1,165 @@
-/* General reset */
-* {
+:root {
+    --neon-pink: #ff00ff;
+    --neon-blue: #00ffff;
+    --neon-green: #39ff14;
+    --neon-yellow: #ffff00;
+    --neon-orange: #ff5733;
+    --dark-bg: #111111;
+    --bright-bg: #2e2e2e;
+    background-color: var(--dark-bg);
+    background-image: url("images/dragon.png");
+    background-repeat: repeat;
+    color: var(--neon-pink);
+}
+
+@font-face {
+    font-family: coolfont;
+    src: url("fonts/coolfont.woff2");
+}
+
+@font-face {
+    font-family: dragonhunter;
+    src: url("fonts/DragonHunter.otf");
+}
+
+body {
+    font-family: coolfont, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body styling */
-body {
-    background-color: #181818; /* Dark background for a moody theme */
-    color: #f0f0f0; /* Light text for contrast */
-    font-family: 'Courier New', Courier, monospace; /* Retro typewriter font */
-    line-height: 1.6;
-    height: 100vh; /* Full height of the viewport */
-    display: flex; /* Flexbox to center everything */
-    flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
-    text-align: center; /* Center text inside the body */
-    padding: 20px;
-    margin: 0;
-}
-
-/* Header styling */
 h1 {
-    color: #FF5733; /* Neon orange for the header */
-    font-family: 'Bangers', cursive; /* Fun, 90s-style font */
-    margin-bottom: 20px; /* Space below the header */
+    font-family: dragonhunter;
+    text-align: center;
+    font-size: 48pt;
+    margin: 15px;
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
 }
 
-/* Navigation styling */
 nav {
-    background-color: #333;
-    width: 100%; /* Full width */
-    padding: 10px 0;
-    margin-bottom: 30px; /* Space below the navigation */
+    border: 2px solid var(--neon-yellow);
+    text-align: center;
+    width: 92vh;
+    margin: auto;
+    background-color: var(--bright-bg);
+    box-shadow: 0 0 10px var(--neon-pink);
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /* Flexbox for the navigation items */
-    justify-content: center; /* Center the list items horizontally */
+    margin: 0px;
     padding: 0;
 }
 
 nav ul li {
-    margin-right: 20px; /* Space between navigation items */
+    font-family: coolfont;
+    font-size: 20pt;
+    margin: 0px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #FF5733; /* Neon orange for links */
+a {
+    font-family: coolfont;
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    display: block;
+    text-align: center;
+    color: var(--neon-orange);
+    text-decoration: none;
+    text-shadow: 0 0 10px var(--neon-orange), 0 0 20px var(--neon-orange);
 }
 
-nav ul li a:hover {
-    color: #F7C92B; /* Neon yellow on hover */
+a:hover {
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
 }
 
-/* Section Styling */
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #222; /* Dark background for sections */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    width: 80%; /* Width of the section */
-    max-width: 800px; /* Max width to prevent it from being too wide */
-}
-
-/* Section title styling */
 h2 {
-    color: #F7C92B; /* Neon yellow for section titles */
-    font-family: 'Bangers', cursive;
-    margin-bottom: 10px;
-}
-
-/* Ordered list styling */
-ol {
-    text-align: left;
-    margin-top: 10px;
+    font-family: dragonhunter;
+    text-align: center;
+    font-size: 42pt;
+    margin: 10px;
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
 }
 
 li {
-    margin-bottom: 10px;
+    font-family: coolfont;
+    font-size: 18pt;
+    line-height: 35px;
+    margin-bottom: 30px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
 }
 
-/* Image styling for screenshots */
-.images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 100%;
-    gap: 20px;
+li img {
+    height: 25pt;
 }
 
-.images img {
-    width: 30%; /* Control the size of images */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+.side {
+    border: 3px solid var(--neon-green);
+    width: 30vw;
+    background-color: var(--bright-bg);
+    float: right;
+    padding: 15px;
+    box-shadow: 0 0 10px var(--neon-green);
 }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: #F7C92B;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+h3 {
+    font-family: dragonhunter;
     text-align: center;
-    z-index: 5;
+    font-size: 22pt;
+    margin: 2px;
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
 }
 
-/* Link return styling */
-.linkreturn {
+.side p {
+    margin: 10px;
+    font-size: 14pt;
+    color: var(--neon-orange);
+    text-shadow: 0 0 10px var(--neon-orange), 0 0 20px var(--neon-orange);
+}
+
+#example1 {
+    height: 100%;
+}
+
+th, td {
+    border: 3px solid var(--neon-blue);
+    font-family: coolfont;
+}
+
+th {
+    font-size: 20pt;
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+}
+
+td {
+    font-size: 16pt;
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+
+td img {
+    height: 20pt;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    font-size: 22pt;
     text-align: center;
-    margin-top: 10px;
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
 }
 
-.linkreturn a {
-    text-decoration: none;
-    color: #FF5733;
-    font-weight: bold;
-}
-
-.linkreturn a:hover {
-    color: #F7C92B;
+section {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--dark-bg);
+    padding: 15px;
+    box-shadow: 0 0 15px var(--neon-pink);
 }

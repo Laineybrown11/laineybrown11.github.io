@@ -1,131 +1,122 @@
 /* application.css */
 
-/* Base Reset */
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Font Imports */
-@font-face {
-    font-family: 'Press Start 2P', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-}
-
-@font-face {
-    font-family: 'Bangers', cursive;
-    src: url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-}
-
-/* Body Styling */
+/* Body styling */
 body {
-    background-color: #181818;
-    color: #F0F0F0;
-    font-family: 'Orbitron', sans-serif;
+    background-color: #181818; /* Dark background for a moody theme */
+    color: #f0f0f0; /* Light text for contrast */
+    font-family: 'Courier New', Courier, monospace; /* Retro typewriter font */
     line-height: 1.6;
-    /* application.css */
-
-/* Ensure the body has a min-height and relative positioning */
-body {
-    min-height: 100vh;  /* Ensure the body covers the full viewport */
-    position: relative; /* For absolute positioning of the home button */
-    margin: 0;
-    font-family: Arial, sans-serif;
-
-
-/* Home Button Styling */
-.home-button 
-    position: absolute;
-    bottom: 20px; /* 20px from the bottom of the viewport */
-    left: 50%;
-    transform: translateX(-50%); /* Centers the button horizontally */
-    text-align: center;
-    z-index: 10; /* Ensures the button appears above other content */
+    padding-bottom: 60px; /* Space at the bottom for the fixed home button */
+    position: relative;
 }
 
-/* Optional: Style the button hover effect */
-.home-button a img {
-    transition: transform 0.3s ease;
-}
-
-.home-button a img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-}
-
-/* Header Styling */
-header {
-    background-color: #2A2A2A;
-    text-align: center;
-    padding: 20px;
-}
-
+/* Header styling */
 h1 {
-    color: #FF5733;
-    font-family: 'Press Start 2P', cursive; /* Pixelated Retro Font */
-    font-size: 36px;
-    text-shadow: 4px 4px 10px rgba(255, 87, 51, 0.8);
+    color: #ff3388; /* Neon orange for the header */
+    font-family: 'Bangers', cursive; /* Fun, 90s-style font */
+    text-align: center; /* Center the header text */
+    margin-top: 20px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    margin: 20px 0;
+    text-align: center; /* Center the navigation */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for centering the list */
+    justify-content: center; /* Horizontally center the list items */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FF5733; /* Neon orange for links */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F7C92B; /* Change to neon yellow on hover */
 }
 
 /* Section Styling */
 section {
+    margin: 20px 10%;
     padding: 20px;
-    margin: 20px;
+    background-color: #222; /* Dark background for sections */
     border-radius: 10px;
-    background-color: #333333;
-    border: 2px solid #FF5733;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Subheading (h2) Styling */
 h2 {
-    color: #F7C92B;
-    font-family: 'Bangers', cursive; /* Fun and bold font */
-    font-size: 28px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(247, 201, 43, 0.6);
+    color: #F7C92B; /* Neon yellow for section titles */
+    font-family: 'Bangers', cursive; /* Retro 90s font */
+    margin-bottom: 10px;
 }
 
-/* Paragraph Styling */
 p {
-    color: #B0B0B0;
-    font-size: 16px;
-    line-height: 1.8;
-    font-family: 'Orbitron', sans-serif; /* Clean and modern font */
-}
-
-/* Ordered List */
-ol {
-    list-style-type: decimal;
-    color: #FF57A1;
-    margin-left: 20px;
-}
-
-ol li {
-    margin: 10px 0;
-    font-family: 'Orbitron', sans-serif;
+    color: #F0F0F0;
+    font-size: 1.1em;
 }
 
 /* Image Styling */
 .images {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-img {
-    width: 200px;
-    height: auto;
+.images img {
+    width: 30%;
     border-radius: 8px;
-    border: 3px solid #FF5733;
-    box-shadow: 0 4px 8px rgba(255, 87, 51, 0.6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* iframe Styling */
-iframe {
-    border: 5px solid #F7C92B;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(247, 201, 43, 0.8);
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #F7C92B;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Link return styling */
+.linkreturn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.linkreturn a {
+    text-decoration: none;
+    color: #ff33ad;
+    font-weight: bold;
+}
+
+.linkreturn a:hover {
+    color: #F7C92B;
 }
 
 /* Footer Styling */

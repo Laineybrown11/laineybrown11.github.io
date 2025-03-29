@@ -1,0 +1,165 @@
+:root {
+    --neon-pink: #ff00ff;
+    --neon-blue: #00ffff;
+    --neon-green: #39ff14;
+    --neon-yellow: #ffff00;
+    --neon-orange: #ff5733;
+    --dark-bg: #111111;
+    --bright-bg: #2e2e2e;
+    background-color: var(--dark-bg);
+    background-image: url("images/dragon.png");
+    background-repeat: repeat;
+    color: var(--neon-pink);
+}
+
+@font-face {
+    font-family: coolfont;
+    src: url("fonts/coolfont.woff2");
+}
+
+@font-face {
+    font-family: dragonhunter;
+    src: url("fonts/DragonHunter.otf");
+}
+
+body {
+    font-family: coolfont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: dragonhunter;
+    text-align: center;
+    font-size: 48pt;
+    margin: 15px;
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+}
+
+nav {
+    border: 2px solid var(--neon-yellow);
+    text-align: center;
+    width: 92vh;
+    margin: auto;
+    background-color: var(--bright-bg);
+    box-shadow: 0 0 10px var(--neon-pink);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+nav ul li {
+    font-family: coolfont;
+    font-size: 20pt;
+    margin: 0px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
+
+a {
+    font-family: coolfont;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: var(--neon-orange);
+    text-decoration: none;
+    text-shadow: 0 0 10px var(--neon-orange), 0 0 20px var(--neon-orange);
+}
+
+a:hover {
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
+}
+
+h2 {
+    font-family: dragonhunter;
+    text-align: center;
+    font-size: 42pt;
+    margin: 10px;
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+
+li {
+    font-family: coolfont;
+    font-size: 18pt;
+    line-height: 35px;
+    margin-bottom: 30px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+}
+
+li img {
+    height: 25pt;
+}
+
+.side {
+    border: 3px solid var(--neon-green);
+    width: 30vw;
+    background-color: var(--bright-bg);
+    float: right;
+    padding: 15px;
+    box-shadow: 0 0 10px var(--neon-green);
+}
+
+h3 {
+    font-family: dragonhunter;
+    text-align: center;
+    font-size: 22pt;
+    margin: 2px;
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
+}
+
+.side p {
+    margin: 10px;
+    font-size: 14pt;
+    color: var(--neon-orange);
+    text-shadow: 0 0 10px var(--neon-orange), 0 0 20px var(--neon-orange);
+}
+
+#example1 {
+    height: 100%;
+}
+
+th, td {
+    border: 3px solid var(--neon-blue);
+    font-family: coolfont;
+}
+
+th {
+    font-size: 20pt;
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+}
+
+td {
+    font-size: 16pt;
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+}
+
+td img {
+    height: 20pt;
+}
+
+td:nth-child(2), td:nth-child(3) {
+    font-size: 22pt;
+    text-align: center;
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow), 0 0 20px var(--neon-yellow);
+}
+
+section {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--dark-bg);
+    padding: 15px;
+    box-shadow: 0 0 15px var(--neon-pink);
+}

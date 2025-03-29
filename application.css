@@ -19,7 +19,7 @@ body {
 
 /* Header styling */
 h1 {
-    color: #FF5733; /* Neon orange for the header */
+    color: #ff3388; /* Neon orange for the header */
     font-family: 'Bangers', cursive; /* Fun, 90s-style font */
     text-align: center; /* Center the header text */
     margin-top: 20px;
@@ -111,7 +111,7 @@ footer {
 
 .linkreturn a {
     text-decoration: none;
-    color: #FF5733;
+    color: #ff33ad;
     font-weight: bold;
 }
 

@@ -38,7 +38,7 @@ h1 {
   font-family: 'Cursive', sans-serif; /* Fun and girly font */
 }
 
-/* Example for pretty heart-shaped element */
+/* Pretty heart-shaped element */
 .funky-shape {
   width: 200px;
   height: 200px;
@@ -92,6 +92,71 @@ a {
 }
 
 a:hover {
+  color: #ff69b4; /* Hot pink on hover */
+  text-decoration: underline;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #ffccf2; /* Light pink background for nav */
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #4a2d5b; /* Deep purple text */
+  font-size: 1.5rem;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff69b4; /* Hot pink on hover */
+  text-decoration: underline;
+}
+
+/* Styling for form inputs */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ffb6c1; /* Light pink border */
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff69b4; /* Hot pink border on focus */
+  outline: none;
+}
+
+/* Style for the main container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff0f6; /* Very light pink */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the sidebar */
+.sidebar {
+  background-color: #ff99cc; /* Soft pink */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+  color: #4a2d5b; /* Deep purple text */
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
   color: #ff69b4; /* Hot pink on hover */
   text-decoration: underline;
 }

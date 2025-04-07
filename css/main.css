@@ -1,0 +1,97 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background for the body of all pages */
+body {
+  background-color: #f9d1e6; /* Soft pastel pink */
+  background-image: url('https://www.example.com/pink-hearts-pattern.png'); /* Example soft hearts background image */
+  background-size: cover;
+  font-family: 'Georgia', serif; /* Elegant and girly font */
+  color: #4a2d5b; /* Deep purple text color for contrast */
+  padding: 20px;
+}
+
+/* Apply to all img elements */
+img {
+  width: 100%; /* Makes the images responsive */
+  max-width: 500px; /* Limits the width */
+  border-radius: 50%; /* Circular images for a cute look */
+  opacity: 0.95; /* Slight opacity for a soft effect */
+  filter: brightness(1.2) contrast(1.1); /* Softens the image for a girly vibe */
+  margin: 20px auto;
+  display: block; /* Centers the image */
+}
+
+/* Styling for h1 elements */
+h1 {
+  color: #ff69b4; /* Hot pink color */
+  font-size: 4rem; /* Large font size for impact */
+  font-weight: bold;
+  text-transform: uppercase; /* Makes text all uppercase */
+  text-decoration: underline wavy #ff69b4; /* Wavy pink underline for a fun look */
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Cursive', sans-serif; /* Fun and girly font */
+}
+
+/* Example for pretty heart-shaped element */
+.funky-shape {
+  width: 200px;
+  height: 200px;
+  background-color: #ffb6c1; /* Light pink */
+  clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%); /* Heart shape */
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pretty paragraph text */
+p {
+  font-family: 'Verdana', sans-serif; /* Girly, clean font */
+  font-size: 1.5rem;
+  color: #ff99cc; /* Soft pink */
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.6; /* Makes the text easier to read */
+}
+
+/* Fun and girly button style */
+button {
+  background-color: #ff69b4; /* Hot pink background */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Footer with girly style */
+footer {
+  background-color: #f8c9e7; /* Light pink background */
+  color: #4a2d5b; /* Dark purple text */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif; /* Elegant, feminine font */
+}
+
+/* Link styling */
+a {
+  color: #ff1493; /* Deep pink for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ff69b4; /* Hot pink on hover */
+  text-decoration: underline;
+}

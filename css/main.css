@@ -1,1 +1,83 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Background for the body of all pages */
+body {
+  background-color: #00aaff; /* Fun 90's blue color */
+  background-image: url('https://www.example.com/funky-pattern.png'); /* Example funky background image */
+  background-size: cover;
+  font-family: 'Comic Sans MS', sans-serif; /* Funky font */
+  color: #ffffff; /* White text for contrast */
+  padding: 20px;
+}
+
+/* Apply to all img elements */
+img {
+  width: 100%; /* Makes the images responsive */
+  max-width: 500px; /* Limits the width */
+  border-radius: 15px; /* Rounded corners for a playful effect */
+  opacity: 0.9; /* Slight opacity for fun style */
+  filter: brightness(1.1) contrast(1.2); /* Makes the image pop */
+  margin: 20px 0;
+  display: block; /* Centers the image */
+}
+
+/* Styling for h1 elements */
+h1 {
+  color: #ff33cc; /* Funky pink color for the header */
+  font-size: 4rem; /* Large font size for impact */
+  font-weight: bold;
+  text-transform: uppercase; /* Makes text all uppercase for extra emphasis */
+  text-decoration: underline wavy #ff33cc; /* Wavy underline for a funky touch */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Example for funky shapes */
+.funky-shape {
+  width: 200px;
+  height: 200px;
+  background-color: #ff33cc; /* Funky pink color */
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* Funky triangular shape */
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Fun and funky font for paragraphs */
+p {
+  font-family: 'Impact', sans-serif; /* Another funky font */
+  font-size: 1.5rem;
+  color: #ffcc00; /* Bright yellow color */
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* A fun button style */
+button {
+  background-color: #ff33cc; /* Funky pink background */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff99cc; /* Lighter pink on hover */
+}
+
+/* Footer with funky style */
+footer {
+  background-color: #003366; /* Dark blue background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comic Sans MS', sans-serif; /* Fun font */
+}

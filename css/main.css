@@ -19,7 +19,6 @@ body {
 img {
   width: 100%; /* Makes the images responsive */
   max-width: 500px; /* Limits the width */
-  border-radius: 50%; /* Circular images for a cute look */
   opacity: 0.95; /* Slight opacity for a soft effect */
   filter: brightness(1.2) contrast(1.1); /* Softens the image for a girly vibe */
   margin: 20px auto;
@@ -66,7 +65,6 @@ button {
   font-weight: bold;
   border: none;
   padding: 10px 20px;
-  border-radius: 30px; /* Rounded button */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

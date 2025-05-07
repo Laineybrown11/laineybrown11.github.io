@@ -1,23 +1,23 @@
-/* Bright Sunset Color Palette */
+/* Fun & Funky Pink-Orange Color Palette */
 :root {
-    --sunset-orange: #ff6b6b;
-    --sunset-pink: #ff9aa2;
-    --sunset-yellow: #ffe066;
-    --sunset-purple: #c89ec4;
-    --sunset-blue: #80ced6;
+    --pastel-pink: #ffd1dc;
+    --bright-pink: #ff69b4;
+    --pastel-orange: #ffe5b4;
+    --bright-orange: #ff7f50;
     --white: #ffffff;
+    --text-dark: #333;
   }
   
   body {
     margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: var(--sunset-pink);
-    color: #333;
+    background: var(--pastel-pink);
+    color: var(--text-dark);
     overflow-x: hidden;
   }
   
   header {
-    background: var(--sunset-orange);
+    background: var(--bright-orange);
     color: var(--white);
     padding: 1rem;
     text-align: center;
@@ -25,7 +25,7 @@
   }
   
   nav button {
-    background: var(--sunset-yellow);
+    background: var(--pastel-orange);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -35,7 +35,7 @@
   }
   
   h2 {
-    color: var(--sunset-purple);
+    color: var(--bright-pink);
     text-align: center;
     margin-top: 2rem;
   }
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--sunset-blue);
+    background: var(--pastel-orange);
     border-radius: 15px;
     margin: 1rem auto;
     padding: 1rem;
@@ -61,7 +61,7 @@
   
   .package a {
     text-decoration: none;
-    color: var(--sunset-orange);
+    color: var(--bright-orange);
     font-weight: bold;
     text-align: center;
   }
@@ -83,7 +83,7 @@
   form label {
     margin-top: 1rem;
     font-weight: bold;
-    color: var(--sunset-blue);
+    color: var(--bright-pink);
   }
   
   form input,
@@ -95,7 +95,7 @@
   }
   
   form button {
-    background: var(--sunset-orange);
+    background: var(--bright-orange);
     color: var(--white);
     padding: 0.75rem;
     border: none;
@@ -108,7 +108,7 @@
   footer {
     text-align: center;
     padding: 1rem;
-    background: var(--sunset-purple);
+    background: var(--bright-pink);
     color: var(--white);
   }
   

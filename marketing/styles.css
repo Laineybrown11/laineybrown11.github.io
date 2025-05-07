@@ -1,0 +1,130 @@
+/* Bright Sunset Color Palette */
+:root {
+    --sunset-orange: #ff6b6b;
+    --sunset-pink: #ff9aa2;
+    --sunset-yellow: #ffe066;
+    --sunset-purple: #c89ec4;
+    --sunset-blue: #80ced6;
+    --white: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: var(--sunset-pink);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background: var(--sunset-orange);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  nav button {
+    background: var(--sunset-yellow);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  h2 {
+    color: var(--sunset-purple);
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .package {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--sunset-blue);
+    border-radius: 15px;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 90%;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .package img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .package a {
+    text-decoration: none;
+    color: var(--sunset-orange);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #contact {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--sunset-blue);
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.3rem;
+  }
+  
+  form button {
+    background: var(--sunset-orange);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--sunset-purple);
+    color: var(--white);
+  }
+  
+  /* Responsive - Galaxy S8+ */
+  @media (max-width: 412px) {
+    .package {
+      font-size: 0.9rem;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 1rem;
+    }
+  
+    header, footer {
+      font-size: 1rem;
+    }
+  }
+  
